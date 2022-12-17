@@ -14,11 +14,11 @@ def test1():
 
 @app.route('/predict', methods = ['GET','POST'])
 def test():
-    # values = request.get_json()
-    # x1 = values['x1']
-    # x2 = values['x2']
-    # data = np.array([x1,x2])
+    values = request.get_json()
+    x1 = values['x1']
+    x2 = values['x2']
+    data = np.array([x1,x2])
     ans = 2
     
-    return jsonify({'return':'ok'})
+    return jsonify({'return':str(ans)})
 
