@@ -1,7 +1,7 @@
 from flask import Flask,jsonify,request
 from flask_cors import CORS
 import numpy as np 
-import app.calculate
+from app.calculate import plus
 
 
 
@@ -17,7 +17,7 @@ def test():
     x1 = values['x1']
     x2 = values['x2']
     data = np.array([x1,x2])
-    ans = calculate.plus(data)
+    ans = plus(data)
     
     return jsonify({'return':str(ans)})
 
