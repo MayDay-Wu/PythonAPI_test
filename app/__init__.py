@@ -8,10 +8,6 @@ from app.calculate import plus
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/index')
-def index():
-    return render_template('index.html')
-
 @app.route('/test',methods = ['GET'])
 def test1():
     values = 2
