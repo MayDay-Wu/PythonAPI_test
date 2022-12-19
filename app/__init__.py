@@ -1,12 +1,17 @@
 # -*- coding: UTF-8 -*-
 
-from flask import Flask,jsonify,request
+from flask import Flask,jsonify,request,render_template
 from flask_cors import CORS
 import numpy as np 
 from app.calculate import plus
 
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
 @app.route('/test',methods = ['GET'])
 def test1():
     values = 2
