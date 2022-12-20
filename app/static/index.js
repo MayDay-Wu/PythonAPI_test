@@ -36,26 +36,30 @@ function  getSecondValue(el){
         
     }
 }
-
+function finational(x){
+    return parseFloat(x.toFixed(4)) 
+}
 for(let i = 0; i<signs.length; i++){
     signs[i].addEventListener('click',(e)=>{
         firstValue =  parseFloat(firstValue)
         
         if (sign =='+' && isFirstValue == true){
-            secondValue =  parseFloat(secondValue)
-            resultValue =(firstValue + secondValue).toPrecision(4); 
-
-            console.log(resultValue)
+            secondValue = parseFloat(secondValue);
+            resultValue =firstValue + secondValue; 
         }else if(sign == '-' && isFirstValue == true){
+            secondValue = parseFloat(secondValue);
             resultValue = firstValue - secondValue;
         }else if(sign == '*' && isFirstValue == true){
+            secondValue = parseFloat(secondValue);
             resultValue = firstValue * secondValue
         }else if(sign == '/' && isFirstValue == true){
+            secondValue = parseFloat(secondValue);
             resultValue = firstValue / secondValue
         }
         sign = e.target.getAttribute('value');
         if (isFirstValue == true){
             result.innerHTML = '';
+            resultValue = finational(resultValue) 
             result.innerHTML = resultValue;
             firstValue = resultValue;
             secondValue = ''
