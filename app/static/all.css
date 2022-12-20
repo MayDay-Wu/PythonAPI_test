@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0 ;
+}
+
+html,body #fullheight{
+    min-height: 100% !important; 
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.container{
+    width: 390px;
+    height: 844px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.result{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 39%;
+    margin-right: 30px;
+
+}
+.result span{
+    display: flex;
+    font-size: 90px;
+    justify-self: flex-end;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    border: 0px;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    transition-duration: 0.4s;
+
+}
+.item_zero{
+    border-radius: 45px;
+    width: 170px;
+}
+.numbers{
+    background-color: rgba(128, 128, 128, 0.37);
+    opacity: 0.7;
+}
+.item1{
+    background-color: rgb(128, 128, 128);
+    opacity: 0.7;
+}
+.item2{
+    background-color: rgb(214, 141, 6);
+    opacity: 0.7;
+}
+.numbers:hover,.item1:hover,.item2:hover{
+    opacity: 1;
+}
+.numbers:active,.item1:active,.item2:active{
+    background-color: white;
+    color: black;
+    transition: 0s
+}
