@@ -54,7 +54,7 @@ html,body #fullheight{
     border-radius: 45px;
     width: 170px;
 }
-.numbers{
+.numbers,.item3{
     background-color: rgba(128, 128, 128, 0.37);
     opacity: 0.7;
 }
@@ -62,14 +62,14 @@ html,body #fullheight{
     background-color: rgb(128, 128, 128);
     opacity: 0.7;
 }
-.item2{
+.signs{
     background-color: rgb(214, 141, 6);
     opacity: 0.7;
 }
-.numbers:hover,.item1:hover,.item2:hover{
+.numbers:hover,.item1:hover,.signs:hover,.item3:hover{
     opacity: 1;
 }
-.numbers:active,.item1:active,.item2:active{
+.numbers:active,.item1:active,.signs:active,.item3:active{
     background-color: white;
     color: black;
     transition: 0s
