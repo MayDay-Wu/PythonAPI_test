@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root{
+    --black: #1B1A17;
+    --yellow: #e53d00;
+    --oriange: #e45826;
+    --gray: #fffffc;
+}
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: var(--black);
+}
+.nav-topBanner{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.nav-topBanner h1{
+    width: 200px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    /* display: flex; */
+    background-image: url(../static/Pictures/logo.png);
+    height: 200px;
+    background-size: cover;
+    background-position: center center ;
+    background-repeat: no-repeat;
+}
+.nav-topBanner form{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    width: 100%;
+    height: 100%;
+}
+.nav-topBanner input{
+    width: 90%;
+    height: 40px;
+    border-radius: 30px 0 0 30px ;
+    border: 0;
+    padding-left: 24px;
+    font-size: 24px;
+}
+.btn-search{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 0 30px 30px 0;
+    border: 0;
+    background-color: white;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-topBanner ul{
+
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+    
+}
+
+.nav-topBanner .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: var(--oriange);
+}
+.nav-topBanner a :hover{
+    border-radius:30px ;
+    background-color: var(--gray);
+}
+
+
+.nav-topBanner ul{
+    display: flex;
+}
+
+/* For .nav-leftBanner */
+.nav-leftBanner{
+    top: 95px;
+    
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: var(--black);
+    border-left: 10px solid var(--black);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.nav-leftBanner.active{
+    width: 80px;
+}
+.nav-leftBanner li {
+    list-style: none;
+    border-top-left-radius:30px ;
+    border-bottom-left-radius:30px ;
+}
+.nav-leftBanner a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--oriange);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.nav-leftBanner li:hover{
+    background: var(--gray);
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+
+
+/* 
+.nav-leftBanner li:hover,
+.nav-leftBanner .hovered{
+    background: var(--gray);
+}
+.nav-leftBanner li:hover a ,
+.nav-leftBanner .hovered a {
+    color: var(--yellow);
+}
+.nav-leftBanner li:hover a::before,
+.nav-leftBanner .hovered a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 25px 25px 0px 0px var(--gray);
+}
+.nav-leftBanner li:hover a::after,
+.nav-leftBanner .hovered a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 25px -25px 0px 0px var(--gray);
+} */
+
+.nav-leftBanner li .icon{
+    /* position: relative; */
+    display: flex;
+    min-width: 60px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+.nav-leftBanner .title{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+.toggle{
+    display: flex;
+    height: 30px;
+    color: var(--oriange);
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+.toggle .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    font-size: 1.5rem; 
+}
+
+
+/* for Main */
+.main{
+    position: fixed;
+    height:-webkit-calc(100% - 90px);
+    width: -webkit-calc(100% - 220px);
+    overflow: scroll;
+    top:80px;
+    left:200px;
+    border-radius: 15px;
+    background: var(--gray);
+    padding: 10px;
+    transition: 0.5s;
+}
+.main.active{
+    left: 80px;
+    width: -webkit-calc(100% - 100px);
+}
