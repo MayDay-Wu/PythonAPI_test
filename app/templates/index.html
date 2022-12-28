@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MainPage</title>
     <link rel="stylesheet" href="../static/index.css">
+    
 </head>
 <body>
     <nav class="nav-topBanner">
@@ -25,19 +26,19 @@
     </nav>
     <div class="nav-leftBanner">
         <ul>
-            <li ><a href="#">
+            <li class="leftList current" data-id = 'a' ><a class = "left_a" href="{{url_for('page1')}}">
                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                 <span class="title">HomePage</span>
             </a></li>
-            <li><a href="#">
+            <li class="leftList" data-id = 'b'><a class = "left_a"  href="{{url_for('page2')}}">
                 <span class="icon"><ion-icon name="file-tray-full-outline"></ion-icon></span>
                 <span class="title">Protpolio</span>
             </a></li>
-            <li><a href="#">
+            <li class="leftList" data-id = 'c'><a class = "left_a" href="{{url_for('page3')}}">
                 <span class="icon"><ion-icon name="hammer-outline"></ion-icon></span>
                 <span class="title">Skills</span>
             </a></li>
-            <li><a href="#">
+            <li class="leftList" data-id = 'd'><a class = "left_a" href="{{url_for('page4')}}">
                 <span class="icon"><ion-icon name="medal-outline"></ion-icon></span>
                 <span class="title">Experience</span>
             </a></li>
@@ -48,9 +49,12 @@
         </div>
         
     </div>
-    <div class="main">
+    <section class = "main" id="Main"> 
+        <div class="main" id = "mainPage">
         
-    </div>
+        </div>
+    </section>
+
     
     <!-- <a href="{{url_for('calculate')}}">計算機</a> -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>

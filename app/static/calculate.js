@@ -26,7 +26,6 @@ function getFirstValue(el){
     result.innerHTML = '';
     firstValue += el;
     result.innerHTML = firstValue;
-    
 }
 
 function  getSecondValue(el){

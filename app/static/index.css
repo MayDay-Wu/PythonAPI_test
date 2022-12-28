@@ -97,11 +97,10 @@ body{
 /* For .nav-leftBanner */
 .nav-leftBanner{
     top: 95px;
-    
     position: fixed;
     width: 200px;
     height: 100vh;
-    padding-top: 20px;
+    padding-top: 30px;
     background-color: var(--black);
     border-left: 10px solid var(--black);
     transition: 0.5s;
@@ -114,6 +113,8 @@ body{
     list-style: none;
     border-top-left-radius:30px ;
     border-bottom-left-radius:30px ;
+    padding:10px 10px 10px 0;
+    
 }
 .nav-leftBanner a{
     position: relative;
@@ -121,57 +122,54 @@ body{
     display: flex;
     text-decoration: none;
     color: var(--oriange);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
-.nav-leftBanner li:hover{
+
+.nav-leftBanner a:hover{
     background: var(--gray);
-    border-radius: 30px;
-    margin-right: 10px;
+    border-radius: 30px ;
 }
 
-
-
-/* 
-.nav-leftBanner li:hover,
-.nav-leftBanner .hovered{
+.nav-leftBanner .current{
     background: var(--gray);
 }
 .nav-leftBanner li:hover a ,
-.nav-leftBanner .hovered a {
+.nav-leftBanner .current a {
     color: var(--yellow);
 }
-.nav-leftBanner li:hover a::before,
-.nav-leftBanner .hovered a::before{
+/* .nav-leftBanner li:hover a::before, */
+.nav-leftBanner .current a::before{
     content: '';
     position: absolute;
-    right: 0;
-    top: -50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 25px 25px 0px 0px var(--gray);
+    right: -10px;
+    top:-70px;
+    width: 30px;
+    height: 60px;
+    border-radius:30px 0px 30px 0;
+    box-shadow: 3px 30px 0px 0px var(--gray);
 }
-.nav-leftBanner li:hover a::after,
-.nav-leftBanner .hovered a::after{
+
+.nav-leftBanner .current a::after{
     content: '';
     position: absolute;
-    right: 0;
-    bottom: -50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 25px -25px 0px 0px var(--gray);
-} */
+    right: -10px;
+    bottom: -70px;
+    width: 30px;
+    height: 60px;
+    
+    border-radius:0px 30px 0px 30px;
+    box-shadow: 3px -30px 0px 0px var(--gray);
+}
 
 .nav-leftBanner li .icon{
-    /* position: relative; */
     display: flex;
     min-width: 60px;
     height: 30px;
     align-items: center;
     justify-content: center;
     font-size: 1.75rem;
+
 }
 .nav-leftBanner .title{
     display: flex;

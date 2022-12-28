@@ -2,3 +2,4 @@ Flask
 Flask_Cors
 gunicorn
 numpy
+Flask-JSGlue
